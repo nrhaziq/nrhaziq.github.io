@@ -22,7 +22,8 @@
     .nav-item a {
       font-family: 'Hammersmith One', sans-serif;
       text-transform: uppercase;
-      color: white !important;
+      /* color: white !important; */
+      color: balck !important;
       font-size: 1.3rem;
     }
 
@@ -41,7 +42,8 @@
 
     .main-caption {
       font-size: 4rem;
-      color: #063834;
+      color: rgba(19, 172, 160);
+      /* color: #063834; */
     }
 
     .additional-caption {
@@ -49,25 +51,36 @@
     }
 
     #ppm-gallery {
-      height: 100vh;
       background: #063834;
     }
 
     #ppm-title-page {
+      background-image: linear-gradient(127deg, rgba(19, 172, 160, 0.5), rgba(1, 74, 69, 0.5));
+    }
+
+    .container-setup {
       height: 100vh;
-      background-image: linear-gradient(127deg, rgba(19, 172, 160, 100%), rgba(1, 74, 69, 100%));
     }
 
     .main-container {
       padding-top: 8%;
+    }
+    .carousel-item {
+      height: 600px;
     }
   </style>
 </head>
 
 <body>
   <div class="row mx-auto fluid-container p-0 m-0">
-    <div id="ppm-title-page" class="">
-      <div class="container h-100 main-container">
+    <div class="p-0 m-0" style="position: absolute; z-index: -99; opacity: 0.8;">
+      <picture>
+        <img src="./img/product-img.jpg" alt="ppm-plastik-label-sample-product" class="vh-100 w-100">
+      </picture>
+    </div>
+
+    <div id="ppm-title-page" class="container-setup">
+      <div class="container h-100 main-container d-block">
         <!-- header starts -->
         <nav class="navbar navbar-expand-lg navbar-light py-2 justify-content-around">
           <div class="flex-shrink">
@@ -101,13 +114,25 @@
             <button id="contact-us" class="btn btn-primary p-3" type="button">Hubungi Kami</button>
           </div>
         </nav>
+        <div class="d-flex flex-column justify-content-end mt-5 h-50">
+          <div class="">
+            <p class="h1 gugi-font">Ingin Labelkan Produk Anda?</p>
+          </div>
+          <div class="col-md-12">
+            <button id="contact-us" class="btn btn-primary p-3" type="button">Hubungi Kami</button>
+          </div>
+        </div>
         <!-- heaader ends-->
+      </div>
+    </div>
 
+    <div id="ppm-gallery" class="align-items-stretch container-setup">
+      <div class="container h-100 main-container">
         <div class="row mt-5 p-0">
-          <div class="col-md-6 col-sm-12 justify-content-start m-0 p-0">
+          <div class="col-md-12 col-sm-12 justify-content-start m-0 p-0">
             <div>
               <div class="gugi-font text-light text-md-start text-sm-center additional-caption">
-                Kami menyediakan servis
+                <p class="h3">Kami juga menyediakan servis</p>
               </div>
             </div>
             <div class="mh-100 mt-3">
@@ -119,38 +144,60 @@
                     aria-label="Slide 2"></button>
                   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
                     aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                    aria-label="Slide4"></button>
                 </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     <!-- <img src="https://picsum.photos/500/400" class="d-block w-100" alt="..."> -->
-                    <div class="d-block" style="height: 400px;">
-                      <h1>test</h1>
-                    </div>
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5 class="text-dark">First slide label</h5>
-                      <p>Some representative placeholder content for the first slide.</p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <!-- <img src="https://picsum.photos/500/400" class="d-block w-100" alt="..."> -->
-                    <div class="d-block" style="height: 400px;">
-                      <h1>test</h1>
-                    </div>
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Second slide label</h5>
-                      <p>Some representative placeholder content for the second slide.</p>
+                    <div class="d-block"> <!--style="height: 400px;-->
+                      <img src="..." class="d-block w-100" alt="...">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>Pembungkusan dan Perlabelan</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                      </div>
+                      <!-- <h1 class="gugi-font main-caption h1 text-bold">Pembungkusan dan Perlabelan</h1> -->
                     </div>
                   </div>
                   <div class="carousel-item">
-                    <!-- <img src="https://picsum.photos/500/400" class="d-block w-100" alt="..."> -->
-                    <div class="d-block" style="height: 400px;">
-                      <h1>test</h1>
-                    </div>
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Third slide label</h5>
-                      <p>Some representative placeholder content for the third slide.</p>
+                    <div class="d-block">
+                      <img src="./img/sewaan-khemah.jpg" class="d-block w-100" alt="..." style="opacity: 0.6;border-radius: 10px;">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h3>Sewaan Khemah dan Pengurusan Majlis</h3>
+                        <p>Some representative placeholder content for the first slide.</p>
+                      </div>
+                      <!-- <h1 class="gugi-font main-caption h1 text-bold">Sewaan Khemah dan Pengurusan Majlis</h1> -->
                     </div>
                   </div>
+                  <div class="carousel-item">
+                    <div class="d-block">
+                      <img src="./img/sewaan-khemah.jpg" class="d-block w-100" alt="..." style="opacity: 0.6;border-radius: 10px;">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h3>Kejuruteraan</h3>
+                        <p>Tukar gambar bersesuaian untuk kejuruteraan</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="d-block">
+                      <img src="./img/sewaan-khemah.jpg" class="d-block w-100" alt="..." style="opacity: 0.6;border-radius: 10px;">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h3>Pertanian</h3>
+                        <p>Tukar gambar bersesuaian untuk pertanian</p>
+                      </div>
+                      <!-- <h1 class="gugi-font main-caption h1 text-bold">Sewaan Khemah dan Pengurusan Majlis</h1> -->
+                    </div>
+                  </div>
+                  <!-- <div class="carousel-item">
+                    <div class="d-block">
+                      <h1 class="gugi-font main-caption h1 text-bold">Kejuruteraan</h1>
+                    </div>
+                  </div> -->
+                  <!-- <div class="carousel-item">
+                    <div class="d-block">
+                      <h1 class="gugi-font main-caption h1 text-bold">Pertanian</h1>
+                    </div>
+                  </div> -->
                 </div>
               </div>
             </div>
@@ -159,17 +206,13 @@
           <!-- <div class="gugi-font main-caption text-md-start text-sm-center py-0 my-0">
             Pembungkusan dan Perlabelan
           </div> -->
-          <div class="col-md-6 align-self-center">
+          <!-- <div class="col-md-6 align-self-center">
             <div class="">
               <img src="./img/image-grid.svg" alt="image-grid-deco" class="d-block mx-auto">
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
-    </div>
-
-    <div id="ppm-gallery" class="align-items-stretch">
-
     </div>
   </div>
 </body>
