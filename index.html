@@ -63,39 +63,34 @@
     }
 
     .main-container {
-      padding-top: 8%;
+      padding-top: 4%;
     }
 
     .carousel-item {
       height: 600px;
     }
+    .menu-list {
+      margin-right: 16%;
+    }
+    .first-page-bg {
+      background-image: url("./img/image-grid.svg");
+      opacity: 0.5;
+    }
   </style>
 </head>
 
 <body>
-  <div class="row mx-auto fluid-container p-0 m-0">
-    <div class="p-0 m-0" style="position: absolute; z-index: -99; opacity: 0.8;">
-      <picture>
-        <img src="./img/product-img.jpg" alt="ppm-plastik-label-sample-product" class="vh-100 w-100">
-      </picture>
-    </div>
-
-    <div id="ppm-title-page" class="container-setup">
-      <div class="container h-100 main-container d-block">
+  <div class="d-flex flex-column h-100 mx-auto fluid-container p-0 m-0">
+    <div class="container-setup">
+      <div class="main-container h-100">
         <!-- header starts -->
-        <nav class="navbar navbar-expand-lg navbar-light py-2 justify-content-between">
-          <div class="flex-shrink">
-            <a class="navbar-brand h1" href="#">
-              <img src="https://picsum.photos/50/50" alt="logo-image">
-            </a>
-          </div>
-          <!-- <div class="flex-fill"> -->
+        <nav class="container navbar navbar-expand-lg navbar-light">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-            <ul id="nav-container" class="navbar-nav col-md-6 justify-content-around">
+          <div class="collapse navbar-collapse justify-content-start menu-list" id="navbarNavDropdown">
+            <ul id="nav-container" class="navbar-nav flex-grow-1 justify-content-between">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#" id="home"">Laman Utama</a>
             </li>
@@ -109,19 +104,22 @@
                 <a class="nav-link" href="#" id="gallery">Galeri</a>
               </li>
             </ul>
-            <!-- </div> -->
           </div>
-          <!-- <div class="flex-shrink">
-            <button id="contact-us" class="btn btn-primary p-3" type="button">Hubungi Kami</button>
-          </div> -->
+          <div class="flex-shrink justify-content-end">
+            <a class="navbar-brand h1" href="#">
+              <img src="https://picsum.photos/50/50" alt="logo-image">
+            </a>
+          </div>
         </nav>
-        <div class="d-flex flex-column justify-content-end mt-5 h-50">
-          <div class="">
-            <p class="h1 gugi-font fw-bold">Ingin Labelkan Produk Anda?</p>
-            <p class="h3">Kami menyediakan perkhidmatan ... </p>
-          </div>
-          <div class="col-md-12 mt-2">
-            <button id="contact-us" class="btn btn-primary p-3" type="button">Hubungi Kami</button>
+        <div class="d-flex flex-grow-1 h-100 w-100 first-page-bg">
+          <div class="w-100 d-flex align-items-center" style=" background-color: rgba(0, 161, 156, 0.9); color: black;">
+            <div class="container">
+              <p class="h1 gugi-font fw-bold">Kepuasan Anda Kebahagiaan Kami</p>
+              <p class="h3">Kami merupkan syarikat yang memberikan pelbagai perkhidmatan seperti percetakan, pembugkusan label dan sulaman. Kami juga akan memberikan khidmat yang terbaik pada harga mampu milik untuk setiap pelanggan</p>
+              <div class="col-md-12 mt-4">
+                <button id="contact-us" class="btn btn-primary p-3" type="button">Hubungi Kami</button>
+              </div>
+            </div>
           </div>
         </div>
         <!-- heaader ends-->
@@ -270,7 +268,9 @@
           <div class="col-md-12 col-sm-12 justify-content-start m-0 p-0">
             <div class="gugi-font text-light text-md-start text-sm-center additional-caption mb-4">
               <p class="h4 text-dark">Servis Pertanian</p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam blanditiis autem nihil similique distinctio necessitatibus repudiandae vitae, repellat magni vero reiciendis voluptatum aperiam atque ex eaque, neque incidunt adipisci! Nam.
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam blanditiis autem nihil similique
+              distinctio necessitatibus repudiandae vitae, repellat magni vero reiciendis voluptatum aperiam atque ex
+              eaque, neque incidunt adipisci! Nam.
             </div>
           </div>
         </div>
