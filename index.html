@@ -9,7 +9,6 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <title>Document</title>
-  <script src="https://kit.fontawesome.com/a450a8fc58.js" crossorigin="anonymous"></script>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Gugi&family=Hammersmith+One&display=swap');
@@ -71,14 +70,15 @@
       height: 600px;
     }
 
-    .menu-list {
-      margin-right: 16%;
-    }
-
     .first-page-bg {
       background-image: url("./img/image-grid.svg");
     }
+
+    .bg-green-p {
+      background-color: rgba(0, 161, 156, 0.9);
+    }
   </style>
+  <script src="https://kit.fontawesome.com/a450a8fc58.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -88,35 +88,35 @@
         <!-- header starts -->
         <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
           <div class="container">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-start menu-list" id="navbarNavDropdown">
-            <ul id="nav-container" class="navbar-nav flex-grow-1 justify-content-between">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#" id="home"">Laman Utama</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-start" id="navbarNavDropdown">
+              <ul id="nav-container" class="navbar-nav flex-grow-1 justify-content-between me-5">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#" id="home"">Laman Utama</a>
             </li>
             <li class=" nav-item">
-                  <a class="nav-link" href="#" id="services">Servis</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" id="about-us">Tentang Kami</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" id="gallery">Galeri</a>
-              </li>
-            </ul>
-          </div>
-          <div class="flex-shrink justify-content-end">
-            <a class="navbar-brand h1" href="#">
-              <img src="https://picsum.photos/50/50" alt="logo-image">
-            </a>
-          </div>
+                    <a class="nav-link" href="#" id="services">Servis</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" id="about-us">Tentang Kami</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" id="gallery">Galeri</a>
+                </li>
+              </ul>
+            </div>
+            <div class="flex-shrink justify-content-end">
+              <a class="navbar-brand h1" href="#">
+                <img src="https://picsum.photos/50/50" alt="logo-image">
+              </a>
+            </div>
           </div>
         </nav>
         <div class="d-flex flex-grow-1 h-100 w-100 first-page-bg">
-          <div class="w-100 d-flex align-items-center" style=" background-color: rgba(0, 161, 156, 0.9); color: black;">
+          <div class="w-100 d-flex align-items-center text-black bg-green-p">
             <div class="container">
               <p class="h1 gugi-font fw-bold">Kepuasan Anda Kebahagiaan Kami</p>
               <p class="h3">Kami merupkan syarikat yang memberikan pelbagai perkhidmatan seperti percetakan, pembugkusan
@@ -137,7 +137,7 @@
         <div class="d-flex flex-grow-1 h-100 w-100">
           <div class="d-flex flex-grow-1 align-items-center justify-content-start m-0 p-0">
             <div class="container">
-              <div class="gugi-font text-dark text-md-center text-sm-center additional-caption mb-4">
+              <div class="gugi-font text-dark text-md-center text-center additional-caption mb-4">
                 <p class="h3 fw-bold">Antara Servis Kami Sediakan</p>
               </div>
               <div class="pb-3">
@@ -257,56 +257,75 @@
       </div>
     </div>
 
-    <div class="align-items-stretch bg-dark">
+    <div class="align-items-stretch bg-green-p">
       <div class="container h-100 main-container">
         <div class="row mx-3 p-0">
           <div class="col-md-12 col-sm-12 justify-content-start m-0 p-0">
-            <div class="gugi-font text-light additional-caption mb-4">
-              <p class="h4 text-white text-md-start text-sm-center ">Informasi Kami</p>
-              <div class="justify-content-center">
-                <!-- <div>
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15935.209565028936!2d101.698544!3d3.14678455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc49d3e30988d7%3A0x464a4b7fda23c09a!2sKuala%20Lumpur%20City%20Centre%2C%20Kuala%20Lumpur%2C%20Federal%20Territory%20of%20Kuala%20Lumpur%2C%20Malaysia!5e0!3m2!1sen!2suk!4v1670772609421!5m2!1sen!2suk"
-                    class="col-md-12" style="border:0;height:40vh" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
-                  </iframe>
-                </div> -->
-                <div class="d-flex mt-4">
-                  <div class="card col-md-4 mx-2 bg-transparent">
-                    <h5 class="card-title">Alamat</h5>
-                    <small class="card-text">
-                      No 12 & 13 (Ground Floor), Jalan Mawar 1, Taman Air Mawang, Johol 73100, Negeri Sembilan.
-                    </small>
+            <div class="gugi-font text-dark additional-caption mb-4 text-center text-md-start">
+              <p class="h4 text-md-start text-sm-center">Informasi Kami</p>
+              <div class="mt-4">
+                <div class="row justify-content-center">
+                  <div class="col-sm-3 mb-4 mb-md-0 text-center text-md-start">
+                    <div class="card border-0 me-2 bg-transparent">
+                      <h5 class="card-title">Alamat</h5>
+                      <small class="card-text">
+                        No 12 & 13 (Ground Floor), Jalan Mawar 1, Taman Air Mawang, Johol 73100, Negeri Sembilan.
+                      </small>
+                    </div>
                   </div>
-                  <div class="card col-md-2 mx-2 bg-transparent">
-                    <h5 class="card-title"> Printing & Packaging</h5>
-                    <small class="card-text">
-                      017-8815722
-                    </small>
+                  <div class="col-sm-3 mb-4 mb-md-0 text-center text-md-start">
+                    <div class="card border-0 me-2 bg-transparent">
+                      <h5 class="card-title"> Printing & Packaging</h5>
+                      <small class="card-text">
+                        017-8815722
+                      </small>
+                    </div>
                   </div>
-                  <div class="card col-md-2 mx-2 bg-transparent">
-                    <h5 class="card-title">Khemah</h5>
-                    <small class="card-text">
-                      017-8483041 (Naz) <br>
-                      017-3073041 (Shah)
-                    </small>
+                  <div class="col-sm-3 mb-4 mb-md-0 text-center text-md-start">
+                    <div class="card border-0 me-2 bg-transparent">
+                      <h5 class="card-title">Khemah</h5>
+                      <small class="card-text">
+                        017-8483041 (Naz) <br>
+                        017-3073041 (Shah)
+                      </small>
+                    </div>
                   </div>
-                  <div class="card col-md-2 mx-2 bg-transparent">
-                    <h5 class="card-title">Machinery</h5>
-                    <small class="card-text">
-                      018-4028578 (Amir) <br>
-                      013-8275819 (Izwan)
-                    </small>
+                  <div class="col-sm-3 mb-4 mb-md-0 text-center text-md-start">
+                    <div class="card border-0 me-2 bg-transparent">
+                      <h5 class="card-title">Machinery</h5>
+                      <small class="card-text">
+                        018-4028578 (Amir) <br>
+                        013-8275819 (Izwan)
+                      </small>
+                    </div>
                   </div>
-                  <div class="card col-md-2 mx-2 bg-transparent">
-                    <h5 class="card-title">Laman Sosial</h5>
-                    <small class="card-text">
-                      <i class="fa-brands fa-square-facebook"></i> test
-                    </small>
-                  </div>
+                  <!-- <div class="col-sm-2 mb-4 mb-md-0 text-center text-md-start">
+                    <div class="card border-0 me-2 bg-transparent">
+                      <h5 class="card-title">Laman Sosial</h5>
+                      <small class="card-text">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-tiktok"></i>
+                      </small>
+                    </div>
+                  </div> -->
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+        <div class="h4 col-md-12 d-flex justify-content-center justify-content-md-end my-3">
+          <div class="me-5">
+            <a href="https://www.facebook.com/printplastiklabel" class="text-decoration-none text-dark"><i class="fa-brands fa-facebook"></i></a>  <!--<small class="h6">Lubuk Tudung Korporat</small>-->
+          </div>
+          <div class="me-5">
+            <a href="https://www.instagram.com/print_plastik_label" class="text-decoration-none text-dark"><i class="fa-brands fa-instagram"></i></a>  <!--<small class="h6">print_plastik_label</small>-->
+          </div>
+          <div class="me-5">
+            <a href="https://www.tiktok.com/@printplastiklabel" class="text-decoration-none text-dark"><i class="fa-brands fa-tiktok"></i></a>  <!--<small class="h6">@printplastiklabel</small>-->
+          </div>
+          <div class="">
+            <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fapi.whatsapp.com%2Fsend%3Fphone%3D%252B60176815722%26fbclid%3DIwAR2dhACsNgr06nzgHJVwlrtNIFVeW8ge836TvcbdAp_01vHAW6k4GEK7F9w&h=AT3ARul861mns39nUnoupTHaITbp75gmXits907SuTERTwzz60SzQGgfdUv8vC9s5n_eehwNb8-yMFHhYMLrHsGZJoWepgbvD85dN9geKdEhAOWtkEA4MFG33_qbddyz_fDy-DbU4wcAGMjCyQIX9w" class="text-decoration-none text-dark"><i class="fa-brands fa-whatsapp"></i></a>  <!--<small class="h6">@printplastiklabel</small>-->
           </div>
         </div>
       </div>
