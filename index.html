@@ -13,6 +13,7 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Gugi&family=Hammersmith+One&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,100&display=swap');
 
     body {
       height: 100vh;
@@ -39,6 +40,10 @@
 
     .gugi-font {
       font-family: 'Hammersmith One', sans-serif;
+    }
+
+    .montserrat-font {
+      font-family: 'Montserrat', sans-serif;
     }
 
     .main-caption {
@@ -72,11 +77,18 @@
     }
 
     .first-page-bg {
-      background-image: url("./img/image-grid.svg");
+      background-image: url("./img/vecteezy_abstract-triangle.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100vh;
     }
 
     .bg-green-p {
-      background-color: rgba(0, 161, 156, 0.9);
+      background-color: rgba(0, 161, 156, 1);
+    }
+
+    .bg-green-low-opacity {
+      background-color: rgba(0, 161, 156, 0.5);
     }
   </style>
   <script src="https://kit.fontawesome.com/a450a8fc58.js" crossorigin="anonymous"></script>
@@ -99,13 +111,13 @@
                   <a class="nav-link active" aria-current="page" href="#" id="home"">Laman Utama</a>
             </li>
             <li class=" nav-item">
-                    <a class="nav-link" href="#" id="services">Servis</a>
+                    <a class="nav-link" href="#OurService" id="services">Servis</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#" id="about-us">Tentang Kami</a>
+                  <a class="nav-link" href="#AboutUs" id="about-us">Tentang Kami</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#" id="gallery">Galeri</a>
+                  <a class="nav-link" href="#Gallery" id="gallery">Galeri</a>
                 </li>
               </ul>
             </div>
@@ -118,9 +130,9 @@
           </div>
         </nav>
         <div class="d-flex flex-grow-1 h-100 w-100 first-page-bg">
-          <div class="w-100 d-flex align-items-center text-black bg-green-p">
+          <div class="w-100 d-flex align-items-center text-black bg-green-low-opacity">
             <div class="container">
-              <p class="h1 display-1 gugi-font fw-bold">Kepuasan Anda Kebahagiaan Kami</p>
+              <p class="h1 display-1 montserrat-font fw-bold">Kepuasan Anda Kebahagiaan Kami</p>
               <p class="h3">Kami merupakan syarikat yang memberikan pelbagai perkhidmatan seperti percetakan,
                 pembungkusan
                 label dan sulaman. Kami juga akan memberikan khidmat yang terbaik pada harga mampu milik untuk setiap
@@ -137,7 +149,7 @@
       </div>
     </div>
 
-    <div id="" class="py-5 mt-5" style="margin-bottom: 80px;">
+    <div id="OurService" class="py-5 mt-5" style="margin-bottom: 80px;">
       <div class="main-container flex-grow-1 h-100 w-100">
         <div class="d-flex flex-grow-1 h-100 w-100">
           <div class="d-flex flex-grow-1 align-items-center justify-content-start m-0 p-0">
@@ -173,7 +185,8 @@
                         </picture>
                         <div class="carousel-caption">
                           <h2 class="fw-bold">Percetakan</h2>
-                          <p class="" style="font-size: larger;">Banner/Bunting, Sticker, Kotak Kalendar, Kad Kahwin, Beg Kertas &
+                          <p class="" style="font-size: larger;">Banner/Bunting, Sticker, Kotak Kalendar, Kad Kahwin,
+                            Beg Kertas &
                             Kad Perniagaan</p>
                           <!-- <p>Some representative placeholder content for the first slide.</p> -->
                         </div>
@@ -197,7 +210,7 @@
                       <div class="d-block bg-dark opacity-100 text-light">
                         <picture>
                           <source srcset="./img/tudung-carousel.jpg" media="(max-width: 650px)">
-                          <img src="./img/tudung-carousel.jpg" class="d-block w-100"
+                          <img src="./img/tudung-carousel-phone-view.jpg" class="d-block w-100"
                             alt="sample image for tudung" style="height: 100vh; opacity: 0.75;">
                         </picture>
                         <div class="carousel-caption">
@@ -222,10 +235,10 @@
                     </div>
                     <div class="carousel-item">
                       <div class="d-block bg-dark opacity-100 text-light">
-                        <picture> 
+                        <picture>
                           <source srcset="./img/tagname-for-phone.jpg" media="(max-width: 650px)">
-                          <img src="./img/pembugkusan.jpg" class="d-block w-100"
-                            alt="sample image for label" style="height: 100vh; opacity: 0.75;">
+                          <img src="./img/pembugkusan.jpg" class="d-block w-100" alt="sample image for label"
+                            style="height: 100vh; opacity: 0.75;">
                         </picture>
                         <div class="carousel-caption">
                           <h2 class=" fw-bold">Pembungkusan & Label</h2>
@@ -239,8 +252,8 @@
                       <div class="d-block bg-dark opacity-100 text-light">
                         <picture>
                           <source srcset="./img/sulaman-for-phone.jpg" media="(max-width: 650px)">
-                          <img src="./img/sulaman.jpg" class="d-block w-100"
-                            alt="sample image for tent rental" style="height: 100vh; opacity: 0.75;">
+                          <img src="./img/sulaman.jpg" class="d-block w-100" alt="sample image for tent rental"
+                            style="height: 100vh; opacity: 0.75;">
                         </picture>
                         <div class="carousel-caption">
                           <h2 class=" fw-bold">Sulaman</h2>
@@ -253,8 +266,8 @@
                       <div class="d-block bg-dark opacity-100 text-light">
                         <picture>
                           <source srcset="./img/machinery.jpg" media="(max-width: 650px)">
-                          <img src="./img/machinery.jpg" class="d-block w-100"
-                            alt="sample image for tent rental" style="height: 100vh; opacity: 0.75;">
+                          <img src="./img/machinery.jpg" class="d-block w-100" alt="sample image for tent rental"
+                            style="height: 100vh; opacity: 0.75;">
                         </picture>
                         <div class="carousel-caption">
                           <h2 class=" fw-bold">Machinery</h2>
@@ -273,7 +286,51 @@
       </div>
     </div>
 
-    <div class="align-items-stretch bg-green-p">
+    <div id="Gallery" class="py-5 mt-5" style="margin-bottom: 80px;">
+      <div class="main-container flex-grow-1 h-100 w-100">
+        <div class="d-flex flex-grow-1 h-100 w-100">
+          <div class="d-flex flex-grow-1 align-items-center justify-content-start m-0 p-0">
+            <div class="container">
+              <div class="gugi-font text-dark text-md-center text-center additional-caption mb-4">
+                <p class="h3 fw-bold">Galeri</p>
+              </div>
+              <!-- Gallery -->
+              <div class="row">
+                <div class="col-lg-4 col-md-12 mb-4 mb-lg-0 justify-content-between">
+                  <img src="./img/machinery-1.jpg"
+                    class="w-100 shadow-1-strong rounded mb-4" alt="gallery-image-for-machinery" />
+
+                  <img src="./img/tudung-carousel-phone-view.jpg"
+                    class="w-100 shadow-1-strong rounded mb-4" alt="gallery-image-for-tudung" />
+
+                  <img src="./img/machinery.jpg"
+                    class="w-100 shadow-1-strong rounded mb-4" alt="gallery-image-for-tudung" />
+                </div>
+
+                <div class="col-lg-4 mb-4 mb-lg-0 justify-content-between">
+                  <img src="./img/machinery-2.jpg"
+                    class="w-100 shadow-1-strong rounded mb-4" alt="gallery-image-for-machinery" />
+
+                  <img src="./img/sulaman-3.jpg"
+                    class="w-100 shadow-1-strong rounded" alt="gallery-image-for-embroidery" />
+                </div>
+
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                  <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp"
+                    class="w-100 shadow-1-strong rounded mb-4" alt="Waves at Sea" />
+
+                  <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp"
+                    class="w-100 shadow-1-strong rounded mb-4" alt="Yosemite National Park" />
+                </div>
+              </div>
+              <!-- Gallery -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="AboutUs" class="align-items-stretch bg-green-p">
       <div class="container h-100 main-container">
         <div class="row mx-3 p-0">
           <div class="col-md-12 col-sm-12 justify-content-start m-0 p-0">
